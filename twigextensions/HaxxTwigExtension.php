@@ -1,12 +1,12 @@
 <?php
-namespace Blocks;
+namespace Craft;
 
 class HaxxTwigExtension extends \Twig_Extension
 {
 
 	public function getName()
 	{
-		return Blocks::t('Haxx (1337)');
+		return Craft::t('Haxx (1337)');
 	}
 
 	public function getFilters()
