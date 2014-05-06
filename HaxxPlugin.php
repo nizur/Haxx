@@ -1,5 +1,5 @@
 <?php
-namespace Blocks;
+namespace Craft;
 
 class HaxxPlugin extends BasePlugin
 {
@@ -10,7 +10,7 @@ class HaxxPlugin extends BasePlugin
 
 	public function getName()
 	{
-		return Blocks::t('Haxx (1337)');
+		return Craft::t('Haxx (1337)');
 	}
 
 	public function getVersion()
@@ -38,7 +38,7 @@ class HaxxPlugin extends BasePlugin
 	 */
 	public function addTwigExtension()
 	{
-		Blocks::import('plugins.haxx.twigextensions.HaxxTwigExtension');
+		Craft::import('plugins.haxx.twigextensions.HaxxTwigExtension');
 		return new HaxxTwigExtension();
 	}
 
