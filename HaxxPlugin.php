@@ -36,7 +36,7 @@ class HaxxPlugin extends BasePlugin
 	 * Load the TruncateTwigExtension class from our ./twigextensions
 	 * directory and return the extension into the template layer
 	 */
-	public function hookAddTwigExtension()
+	public function addTwigExtension()
 	{
 		Blocks::import('plugins.haxx.twigextensions.HaxxTwigExtension');
 		return new HaxxTwigExtension();
